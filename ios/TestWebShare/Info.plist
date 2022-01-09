@@ -27,6 +27,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
+				<string>dz.rn.example.TestWebShare</string>
 				<string>TestWebShare</string>
 			</array>
 		</dict>

@@ -12,6 +12,9 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		3BF8409C9FF1C06A9787D1CA /* libPods-TestWebShare-TestWebShareTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5B0BED311565A73D854F34 /* libPods-TestWebShare-TestWebShareTests.a */; };
+		6CCE8454278BA85700FDFE8E /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE8453278BA85700FDFE8E /* ShareViewController.swift */; };
+		6CCE8457278BA85700FDFE8E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CCE8455278BA85700FDFE8E /* MainInterface.storyboard */; };
+		6CCE845B278BA85700FDFE8E /* TestWebShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6CCE8451278BA85700FDFE8E /* TestWebShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		BC8FA36FFA8DD34290D9A8F8 /* libPods-TestWebShare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E4A94EE3037CCBE7940762 /* libPods-TestWebShare.a */; };
 /* End PBXBuildFile section */
@@ -24,7 +27,28 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = TestWebShare;
 		};
+		6CCE8459278BA85700FDFE8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CCE8450278BA85700FDFE8E;
+			remoteInfo = TestWebShareExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6CCE845F278BA85700FDFE8E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6CCE845B278BA85700FDFE8E /* TestWebShareExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* TestWebShareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestWebShareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +64,11 @@
 		40E4A94EE3037CCBE7940762 /* libPods-TestWebShare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestWebShare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5B0BED311565A73D854F34 /* libPods-TestWebShare-TestWebShareTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestWebShare-TestWebShareTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CCE844C278BA6E200FDFE8E /* TestWebShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = TestWebShare.entitlements; path = TestWebShare/TestWebShare.entitlements; sourceTree = "<group>"; };
+		6CCE8451278BA85700FDFE8E /* TestWebShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TestWebShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CCE8453278BA85700FDFE8E /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		6CCE8456278BA85700FDFE8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		6CCE8458278BA85700FDFE8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CCE8460278BA86B00FDFE8E /* TestWebShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestWebShareExtension.entitlements; sourceTree = "<group>"; };
 		6E9BF2174658D802E2EDFC60 /* Pods-TestWebShare-TestWebShareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestWebShare-TestWebShareTests.debug.xcconfig"; path = "Target Support Files/Pods-TestWebShare-TestWebShareTests/Pods-TestWebShare-TestWebShareTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = TestWebShare/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9F4A83DA37273C2F3DA005D /* Pods-TestWebShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestWebShare.debug.xcconfig"; path = "Target Support Files/Pods-TestWebShare/Pods-TestWebShare.debug.xcconfig"; sourceTree = "<group>"; };
@@ -61,6 +90,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC8FA36FFA8DD34290D9A8F8 /* libPods-TestWebShare.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CCE844E278BA85700FDFE8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +144,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6CCE8452278BA85700FDFE8E /* TestWebShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				6CCE8460278BA86B00FDFE8E /* TestWebShareExtension.entitlements */,
+				6CCE8453278BA85700FDFE8E /* ShareViewController.swift */,
+				6CCE8455278BA85700FDFE8E /* MainInterface.storyboard */,
+				6CCE8458278BA85700FDFE8E /* Info.plist */,
+			);
+			path = TestWebShareExtension;
+			sourceTree = "<group>";
+		};
 		810999F00EE0B20B9EA8A37E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +179,7 @@
 				13B07FAE1A68108700A75B9A /* TestWebShare */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* TestWebShareTests */,
+				6CCE8452278BA85700FDFE8E /* TestWebShareExtension */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				810999F00EE0B20B9EA8A37E /* Pods */,
@@ -146,6 +194,7 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* TestWebShare.app */,
 				00E356EE1AD99517003FC87E /* TestWebShareTests.xctest */,
+				6CCE8451278BA85700FDFE8E /* TestWebShareExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,15 +235,34 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				6AED8128DDB6F2E3DB49AB75 /* [CP] Embed Pods Frameworks */,
 				DD3A1899F20C31A1A0942EF9 /* [CP] Copy Pods Resources */,
+				6CCE845F278BA85700FDFE8E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6CCE845A278BA85700FDFE8E /* PBXTargetDependency */,
 			);
 			name = TestWebShare;
 			productName = TestWebShare;
 			productReference = 13B07F961A680F5B00A75B9A /* TestWebShare.app */;
 			productType = "com.apple.product-type.application";
+		};
+		6CCE8450278BA85700FDFE8E /* TestWebShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CCE845C278BA85700FDFE8E /* Build configuration list for PBXNativeTarget "TestWebShareExtension" */;
+			buildPhases = (
+				6CCE844D278BA85700FDFE8E /* Sources */,
+				6CCE844E278BA85700FDFE8E /* Frameworks */,
+				6CCE844F278BA85700FDFE8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestWebShareExtension;
+			productName = TestWebShareExtension;
+			productReference = 6CCE8451278BA85700FDFE8E /* TestWebShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -202,6 +270,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -210,6 +279,9 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1120;
+					};
+					6CCE8450278BA85700FDFE8E = {
+						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
@@ -228,6 +300,7 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* TestWebShare */,
 				00E356ED1AD99517003FC87E /* TestWebShareTests */,
+				6CCE8450278BA85700FDFE8E /* TestWebShareExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -246,6 +319,14 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CCE844F278BA85700FDFE8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CCE8457278BA85700FDFE8E /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +498,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6CCE844D278BA85700FDFE8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CCE8454278BA85700FDFE8E /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -425,7 +514,23 @@
 			target = 13B07F861A680F5B00A75B9A /* TestWebShare */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
+		6CCE845A278BA85700FDFE8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CCE8450278BA85700FDFE8E /* TestWebShareExtension */;
+			targetProxy = 6CCE8459278BA85700FDFE8E /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6CCE8455278BA85700FDFE8E /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CCE8456278BA85700FDFE8E /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
@@ -485,6 +590,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A9F4A83DA37273C2F3DA005D /* Pods-TestWebShare.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = TestWebShare/TestWebShare.entitlements;
@@ -513,6 +619,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FF31D481546BD583E5FD2592 /* Pods-TestWebShare.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = TestWebShare/TestWebShare.entitlements;
@@ -532,6 +639,84 @@
 				PRODUCT_NAME = TestWebShare;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		6CCE845D278BA85700FDFE8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = TestWebShareExtension/TestWebShareExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = E7DD5BJJ4X;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestWebShareExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TestWebShareExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = dz.rn.example.TestWebShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6CCE845E278BA85700FDFE8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = TestWebShareExtension/TestWebShareExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = E7DD5BJJ4X;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestWebShareExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TestWebShareExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = dz.rn.example.TestWebShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -677,6 +862,15 @@
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
 				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CCE845C278BA85700FDFE8E /* Build configuration list for PBXNativeTarget "TestWebShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CCE845D278BA85700FDFE8E /* Debug */,
+				6CCE845E278BA85700FDFE8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
